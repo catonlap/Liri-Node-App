@@ -137,37 +137,37 @@ function doWhatItSays() {
 
 // START PROMPT
 
-inquirer.prompt([
-  {
-    type: 'list',
-    name: 'command_picked',
-    message: "Which command would you like to run?",
-    paginated: true,
-    choices: [new inquirer.Separator(), "concert-this", new inquirer.Separator(), "spotify-this-song", new inquirer.Separator(), "movie-this", new inquirer.Separator(), "do-what-it-says"]
-  }
-])
+// inquirer.prompt([
+//   {
+//     type: 'list',
+//     name: 'command_picked',
+//     message: "Which command would you like to run?",
+//     paginated: true,
+//     choices: [new inquirer.Separator(), "concert-this", new inquirer.Separator(), "spotify-this-song", new inquirer.Separator(), "movie-this", new inquirer.Separator(), "do-what-it-says"]
+//   }
+// ])
 
-  .then(function (print) {
-    var command_picked = print.command_picked;
+//   .then(function (print) {
+//     var command_picked = print.command_picked;
 
-    if (command_picked === "concert-this") {
-       console.log("success")
-      //store command "node liri concert-this"
-      //ask question "What artist would you like to search?"
-      //store search
+//     if (command_picked === "concert-this") {
+//        console.log("success")
+//       //store command "node liri concert-this"
+//       //ask question "What artist would you like to search?"
+//       //store search
 
-    } else if (command_picked === "spotify-this-song") {
-      //store command "node liri spotify-this-song"
-      //ask question "What song would you like to search?"
-
-
-    } else if (command_picked === "movie-this") {
-      //store command "node liri movie-this"
-      //ask question "What movie would you like to search?"
+//     } else if (command_picked === "spotify-this-song") {
+//       //store command "node liri spotify-this-song"
+//       //ask question "What song would you like to search?"
 
 
-    } else if (command_picked === "do-what-it-says") {
+//     } else if (command_picked === "movie-this") {
+//       //store command "node liri movie-this"
+//       //ask question "What movie would you like to search?"
 
 
-    }
-  });
+//     } else if (command_picked === "do-what-it-says") {
+
+
+//     }
+//   });
